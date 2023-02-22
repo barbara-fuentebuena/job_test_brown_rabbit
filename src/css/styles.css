@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Times New Roman', Times, serif; }
+  body h1 {
+    font-size: 40px; }
+  body h2 {
+    font-size: 35px; }
+  body h3 {
+    font-size: 30px; }
+  body h4 {
+    font-size: 25px; }
+  body h5 {
+    font-size: 20px; }
+  body h6 {
+    font-size: 18px; }
+
+/*navegation bar*/
+.nav__main {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px; }
+  .nav__main .nav__logo {
+    width: 50%; }
+    .nav__main .nav__logo img {
+      width: 20rem;
+      margin-left: 100px; }
+  .nav__main .nav__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 100px; }
+    .nav__main .nav__text .nav__subtext {
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 20px; }
+      .nav__main .nav__text .nav__subtext .nav__searcher {
+        display: flex;
+        margin-inline: 30px;
+        border-bottom: white 1px solid;
+        padding: 2px; }
+        .nav__main .nav__text .nav__subtext .nav__searcher input {
+          background-color: transparent;
+          border: none; }
+          .nav__main .nav__text .nav__subtext .nav__searcher input::placeholder {
+            color: white;
+            padding: 10px; }
+      .nav__main .nav__text .nav__subtext .nav__social img {
+        margin-inline: 7px; }
+    .nav__main .nav__text .nav__menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      .nav__main .nav__text .nav__menu ul li {
+        margin-left: 50px; }
+        .nav__main .nav__text .nav__menu ul li a {
+          text-decoration: none;
+          color: white; }
+          .nav__main .nav__text .nav__menu ul li a:hover {
+            text-decoration: underline;
+            transition: 3s; }
+
+/*main sections*/
+/*index*/
+.extra__bg {
+  background-color: black;
+  height: 100px; }
+
+.banner__main {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 100px;
+  margin-right: 100px; }
+  .banner__main img {
+    height: 500px; }
+  .banner__main .banner__indicators {
+    display: none; }
+  .banner__main .banner__buttons {
+    display: flex;
+    justify-content: flex-end; }
+    .banner__main .banner__buttons .banner__button1, .banner__main .banner__buttons .banner__button2 {
+      position: relative;
+      width: fit-content;
+      padding: 10px; }
+  .banner__main .banner__text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 600px;
+    padding: 50px; }
+
+.main__index {
+  margin-top: 450px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "info events";
+  margin-inline: 150px; }
+  .main__index p {
+    padding-block: 10px; }
+  .main__index .info {
+    grid-area: info; }
+    .main__index .info .all__items .post__items {
+      display: flex;
+      margin-bottom: 40px; }
+      .main__index .info .all__items .post__items .post__items__text {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 20px;
+        justify-content: space-between; }
+        .main__index .info .all__items .post__items .post__items__text a {
+          border: solid black 1px;
+          padding: 10px;
+          text-decoration: none;
+          width: fit-content;
+          color: black; }
+          .main__index .info .all__items .post__items .post__items__text a:hover {
+            background-color: black;
+            color: white;
+            transition: .3s; }
+    .main__index .info .pagination__main {
+      display: flex;
+      justify-content: space-between; }
+      .main__index .info .pagination__main p {
+        padding-block: 0; }
+      .main__index .info .pagination__main a {
+        border: solid black 1px;
+        padding: 10px;
+        text-decoration: none;
+        width: 100px;
+        color: black;
+        text-align: center; }
+        .main__index .info .pagination__main a:hover {
+          background-color: black;
+          color: white;
+          transition: .3s; }
+  .main__index .events {
+    grid-area: events;
+    height: auto;
+    margin-inline: 50px; }
+    .main__index .events .all__events hr {
+      margin-top: 50px;
+      margin-bottom: 50px; }
+    .main__index .events .all__events .events__items {
+      align-items: center; }
+      .main__index .events .all__events .events__items a {
+        border: solid black 1px;
+        padding: 10px;
+        text-decoration: none;
+        width: fit-content;
+        color: black; }
+        .main__index .events .all__events .events__items a:hover {
+          background-color: black;
+          color: white;
+          transition: .3s; }
+
+.sponsors__main {
+  margin-inline: 150px; }
+  .sponsors__main h3 {
+    padding: 50px;
+    text-align: center; }
+  .sponsors__main .sponsors__icon img {
+    width: 6.5rem; }
+
+/*footer*/
+footer {
+  background-color: black;
+  margin: 100px;
+  color: white; }
+  footer .footer__main {
+    padding: 100px; }
+    footer .footer__main .footer__top {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 20px; }
+      footer .footer__main .footer__top .footer__logo img {
+        width: 20rem; }
+      footer .footer__main .footer__top .footer__social img {
+        margin-left: 15px; }
+    footer .footer__main .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 20px; }
+      footer .footer__main .footer__bottom .footer__bottom__about {
+        padding-right: 100px; }
+      footer .footer__main .footer__bottom .footer__bottom__instagram {
+        padding-right: 100px; }
+        footer .footer__main .footer__bottom .footer__bottom__instagram .footer__bottom__instagram__img {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
+          gap: 5px; }
+      footer .footer__main .footer__bottom .footer__bottom__contact {
+        padding-right: 100px; }
