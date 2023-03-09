@@ -34,6 +34,9 @@
         width: 600px;
         padding: 50px;
     }
+    .text__mobile{
+        display: none;
+    }
 }
 .main__index{
     margin-top: 450px;
@@ -93,6 +96,9 @@
                         }
             }
         }
+        .pagination__separation{
+            display: none;
+        }
     }
     .events{
         grid-area: events;
@@ -133,3 +139,4 @@
         }
     }
 }
+
